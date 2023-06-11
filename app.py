@@ -4,4 +4,4 @@ app = Flask(__name__)
 
 @app.route("/")
 def pagina_inicial():
-    return "Alterando Mensagem para Teste"
+    return "Consegui fazer deploy no GCP com a minha conta Google - by Thiago Scompa"
