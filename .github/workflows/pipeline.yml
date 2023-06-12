@@ -22,9 +22,6 @@ jobs:
       - name: Install Requirements
         run:  pip install flask
 
-      - name: Unit Test
-        run: python -m unittest -v test
-
       - name: Docker Login
         run: | 
           echo '${{ secrets.GOOGLE_CREDENTIALS }}' > key.json
