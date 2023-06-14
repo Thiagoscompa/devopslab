@@ -8,12 +8,3 @@ csrf = CSRFProtect(app)
 @app.route("/")
 def pagina_inicial():
     return "Consegui fazer deploy no GCP com a minha conta Google - by Thiago Scompa"
-
-@app.route('/bug')                                                                                                                                
-def bad():                                                                                                                                        
-    try:                                                                                                                                          
-        raise TypeError()                                                                                                                         
-    except TypeError as e:                                                                                                                        
-        print(e)                                                                                                                                  
-    except TypeError as e:                                                                                                                        
-        print("Duplicado, ou seja, nunca vai entrar aqui.")
