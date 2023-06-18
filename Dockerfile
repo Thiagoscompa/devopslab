@@ -12,8 +12,8 @@ WORKDIR /home/myapp
 ENV PATH="/home/myapp/.local/bin:${PATH}"
 
 # Copiar os arquivos da pasta local para dentro do container
-COPY --chown=myapp:nogroup --chmod:777 requirements.txt /home/myapp/
-COPY --chown=myapp:nogroup --chmod:444 app.py /home/myapp/
+COPY requirements.txt /home/myapp/
+COPY app.py /home/myapp/
 
 # Instalar as dependências de Python de acordo com o que foi desenvolvido na aplicação e que está declarado no arquivo requirements.txt.
 RUN pip install --user --trusted-host pypi.python.org -r requirements.txt
