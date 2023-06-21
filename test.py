@@ -16,4 +16,4 @@ class Test(unittest.TestCase):
 
     def test_conteudo(self):
         # verifica o retorno do conteudo da pagina
-        self.assertEqual(self.result.data.decode('utf-8'), "Consegui fazer deploy no GCP com a minha conta Google - by Thiago Scompa")
+        self.assertEqual(self.result.data.decode('utf-8'), "Entrega Final")

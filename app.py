@@ -7,4 +7,4 @@ csrf = CSRFProtect(app)
 
 @app.route("/")
 def pagina_inicial():
-    return "Consegui fazer deploy no GCP com a minha conta Google - by Thiago Scompa"
+    return "Entrega Final"
