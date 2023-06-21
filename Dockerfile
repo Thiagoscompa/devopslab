@@ -2,7 +2,7 @@
 FROM python:3
 
 # Adicionando um usuário de sistema
-RUN adduser --system  myapp
+RUN adduser --system --home /home/myapp  myapp
 USER myapp
 
 # Definindo o diretório onde a aplicação será armazenada
